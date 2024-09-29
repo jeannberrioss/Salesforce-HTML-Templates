@@ -1,0 +1,69 @@
+<!-- Placement of the Image -->
+<img 
+    style="max-width: 550px; display: block; margin: 30px 0 30px 0;" 
+    alt="Nexus Circular Logo" 
+    src=""
+>
+
+<p style="font-size: 22px;">
+    {!Fetch_Opportunity.Owner.FirstName} {!Fetch_Opportunity.Owner.LastName} has requested a new Manufacturing Item be created.
+</p>
+
+<p style="font-size: 22px;">
+    Please generate the Manufacturing ID when you have confirmed all the required information is received.
+</p>
+
+<!-- Table -->
+<table class="ql-table-blob" border="2" style="width: 60%; border-collapse: collapse; font-size: 20px;">
+    <tbody>
+        <!-- Table Headers -->
+        <tr>
+            <th style="background-color: #f2f2f2; text-align: left; border: 2px solid black; padding: 8px; width: 15%;">Opportunity Field</th>
+            <th style="background-color: #f2f2f2; text-align: left; border: 2px solid black; padding: 8px; width: 15%;">Opportunity Details</th>
+        </tr>
+        
+        <!-- Table Rows -->
+        <tr>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Supplier</td>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{!Fetch_Opportunity.Account.Name}</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Short Material Description</td>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{!Fetch_Opportunity.Short_material_description__c}{!Short_material_description}</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Good Better Best</td>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{!Fetch_Opportunity.Good_Better_Best__c}{!Good_Better_Best}</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Conversion Type</td>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{!Fetch_Opportunity.Conversion_Type__c}{!Conversion_Type}</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Delivered Format</td>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{!Fetch_Opportunity.Delivered_Format_New__c}{!Delivered_Format}</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Negotiated PO Price ($/lb)</td>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${!Fetch_Opportunity.Negotiated_PO_Price_lb__c}.00{!Negotiated_PO_Price_lb}</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Freight Invoice Responsibility</td>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{!Fetch_Opportunity.Freight_Invoice_Responsibility__c}{!Freight_Invoice_Responsibility}</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Freight Company/Broker</td>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{!Fetch_Opportunity.Freight_Company__r.Name}{!Freight_Company_Broker.recordName}</td>
+        </tr>
+        <tr>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Link to record</td>
+            <td style="border: 2px solid black; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{!recordLink}</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<p style="font-size: 22px;">
+    <strong>Note:</strong> This is a system-generated email. Please do not reply to this email.
+</p>
